@@ -142,7 +142,7 @@ module Shirinji
     # @option options [Boolean] :auto_prefix generates prefix from module
     # @option options [Boolean] :construct applies `construct` on every bean
     # @yield a standard map
-    def scope(**options, &block)
+    def scope(options = {}, &block)
       Scope.new(self, **options, &block)
     end
 
